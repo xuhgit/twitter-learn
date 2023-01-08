@@ -64,9 +64,9 @@ pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 sudo apt-get install -y libpq-dev build-essential
 
 # postgres user and db
-sudo -u postgres createuser root
+sudo -u postgres createuser vagrant
 sudo -u postgres createdb twitter
-sudo -u postgres psql -c "ALTER role root WITH PASSWORD 'yourpassword'"
+sudo -u postgres psql -c "ALTER role vagrant WITH PASSWORD 'yourpassword'"
 # fi
 
 
